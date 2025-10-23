@@ -1,18 +1,9 @@
-import { HeroSection } from './HeroSection';
-import { FeaturedServices } from './FeaturedServices';
-import { TopSellingParts } from './TopSellingParts';
-import { Testimonials } from './Testimonials';
-import { Footer } from './Footer';
-import { Header } from './Header';
-
-
-
-const AutoLuxWebsite = () => {
-  const data = {
+export const data = {
     "brand": {
       "name": "Das Auto",
       "logo": "icon_placeholder",
       "navigation": [
+        {"label": "Home", "route": "/"},
         {"label": "Services", "route": "/services"},
         {"label": "Parts", "route": "/parts"},
         {"label": "Bookings", "route": "/bookings"},
@@ -27,7 +18,7 @@ const AutoLuxWebsite = () => {
     "heroSection": {
       "backgroundImage": "city_night_placeholder",
       "heading": "Elevate Your Drive",
-      "subtitle": "Premium car servicing and parts for discerning drivers. Experience the future of automotive care.",
+      "subtitle": "Premium bike servicing and parts for discerning drivers. Experience the future of automotive care.",
       "primaryAction": {
         "label": "Explore Services",
         "type": "button",
@@ -109,17 +100,3 @@ const AutoLuxWebsite = () => {
       ]
     }
   };
-
-  return (
-    <div className="min-h-screen bg-gray-800">
-      <Header brand={data.brand} />
-      <HeroSection heroSection={data.heroSection} />
-      <FeaturedServices featuredServices={data.featuredServices} />
-      <TopSellingParts topSellingParts={data.topSellingParts} />
-      {/* <Testimonials testimonials={data.testimonials} /> */}
-      <Footer footer={data.footer} />
-    </div>
-  );
-};
-
-export default AutoLuxWebsite;

@@ -1,5 +1,6 @@
 import { Car, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
 export const Header = ({ brand }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,6 +61,7 @@ export const Header = ({ brand }) => {
  
         </div>
       </div>
+      <Outlet/>
     </>
   );
 };

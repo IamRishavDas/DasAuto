@@ -21,9 +21,6 @@ export const Footer = ({ footer }) => (
         
         <div className="flex space-x-4">
           <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            <Twitter className="w-6 h-6" />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
             <Instagram className="w-6 h-6" />
           </a>
           <a href="#" className="text-gray-400 hover:text-white transition-colors">

@@ -1,10 +1,10 @@
 import './App.css'
-import AutoLuxWebsite from './components/AutoLuxWebsite'
+import AppRoutes from './routes/AppRoutes'
 
 function App() {
   return (
     <>
-      <AutoLuxWebsite/>
+      <AppRoutes/>
     </>
   )
 }
